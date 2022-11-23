@@ -1,38 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>orbh.se</title>
+    <title>orbh.se - Olle Goblirsch</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <script src="feather.js"></script>
   </head>
   <body>
     <div id="container">
       <div id="header">
-        <a id="header-title" class="hover-underline-animation" href="/">orbh</a>
-        <div id="header-tabs">
-          <a class="header-link" target="_blank" href="https://github.com/orbh">
-            <img class="header-image-link" src="./public/GitHub-Mark-32px.png" alt="Github" />
+        <a id="header-title" class="hover-underline-animation" href="/">orbh.se</a>
+        <div id="header-tabs-container">
+          <a class="header-tab" target="_blank" href="https://github.com/orbh">
+            <i data-feather="github"></i>
+            <p>Github</p>
           </a>
-          <a class="header-link" target="_blank" href="mailto:olle.goblirsch@gmail.com">
-            <img class="header-image-link" src="./public/email-icon-121.png" alt="Email" />
+          <a class="header-tab" target="_blank" href="mailto:olle.goblirsch@gmail.com">
+            <i data-feather="mail"></i>
+            <p>Email</p>
           </a>
         </div>
       </div>
       <div id="main">
         <div id="main-introduction">
-          <p id="main-introduction-title">Hello, my name Olle Goblirsch</p>
-          <p id="main-introduction-continued">I'm a junior web developer looking for work</p>
+          <div id="main-introduction-textarea">
+            <h2 id="main-introduction-title">Hello, my name Olle Goblirsch</h2>
+            <p id="main-introduction-continued">
+              I'm a junior web developer looking for the next big thing!
+            </p>
+          </div>
+          <img
+            id="main-image"
+            src="./public/images/Batman Juholt 825.png"
+            height="150"
+            width="150"
+            alt="Avatar of me"
+          />
         </div>
-        <img id="main-image" src="./public/Batman Juholt 825.png" height="150" width="150" />
+        <div class="separator"></div>
+        <div id="main-showcase">
+          <h2 id="showcase-title">Showcase</h2>
+          <div id="showcase-box">
+            <div class="showcase-item">
+              <h3 class="showcase-item-title">EonDiceRoller</h3>
+              <a class="showcase-link" href="https://github.com/orbh/EonDiceRoller" target="_blank">
+                https://github.com/orbh/EonDiceRoller
+              </a>
+              <img
+                class="showcase-image"
+                src="public/images/eon.jpg"
+                alt="screenshot of eon application"
+              />
+              <p class="showcase-text">
+                Utility tool for the tabletop RPG Eon. Command-line application built in Python as a
+                hobby project. Can be used to pre-generate rolls for the gamemaster, or for the
+                players to help calculate their improvement rolls.
+              </p>
+            </div>
+            <div class="showcase-item">
+              <h3 class="showcase-item-title">Utility tool for tabletop RPG Eon</h3>
+              <a class="showcase-link" href="https://github.com/orbh/EonDiceRoller" target="_blank">
+                https://github.com/orbh/EonDiceRoller
+              </a>
+              <img
+                class="showcase-image"
+                src="public/images/eon.jpg"
+                alt="screenshot of eon application"
+              />
+              <p class="showcase-text">
+                Command-line application built in Python as a hobby project. Can be used to
+                pre-generate rolls for the gamemaster, or for the players to help calculate their
+                improvement rolls.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="footer">
-        <p>© 2022, orbh</p>
-        <p>Icons from icons8.com</p>
+        <p>© 2022, Olle Goblirsch</p>
       </div>
     </div>
     <script src="scripts.js" async defer></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
