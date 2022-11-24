@@ -33,6 +33,7 @@ p {
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  text-decoration: none;
 }
 
 .header-tabs-anchor {
@@ -63,6 +64,7 @@ p {
 }
 
 #header {
+  flex: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,21 +91,23 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
   flex: auto;
   margin-left: 3%;
   margin-right: 3%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #main-introduction {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: 20px;
 }
 
 #main-introduction-title {
   font-size: x-large;
-  color: forestgreen;
   margin-bottom: 0px;
   text-align: start;
 }
@@ -120,6 +124,7 @@ p {
 }
 
 #footer {
+  flex: none;
   height: 20px;
   line-height: 20px;
   display: flex;
@@ -146,15 +151,19 @@ p {
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
+  width: 100%;
 }
 
 #showcase-title {
   color: forestgreen;
+  margin: 0px;
 }
 
 #showcase-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .showcase-link {
@@ -167,14 +176,16 @@ p {
 .showcase-item {
   display: flex;
   flex-direction: column;
-  max-width: 40%;
+  align-items: center;
+  max-width: 399px;
 }
 
 .showcase-image {
-  max-height: 100%;
-  max-width: 100%;
+  height: 100%;
+  width: 100%;
   margin-bottom: 5px;
   margin-top: 5px;
+  max-height: 178px;
 }
 
 .showcase-item-title {
@@ -183,4 +194,44 @@ p {
 
 .showcase-card-text {
   margin: 5px;
+}
+
+#main-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.skills-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.skills-column {
+}
+
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.primary-color {
+  color: black;
+}
+
+.accent-color {
+  color: forestgreen;
+}
+
+.skill-list-box {
+  display: flex;
+}
+
+.list-heading {
+  margin-bottom: 0px;
 }
