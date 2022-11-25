@@ -9,11 +9,11 @@ body {
 }
 
 a {
-  color: forestgreen;
+  color: black;
 }
 
 a:visited {
-  color: darkgreen;
+  color: gray;
 }
 
 h1,
