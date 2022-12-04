@@ -1,0 +1,3 @@
+Replace single page with sections instead
+First section should include header
+Last section should include footer

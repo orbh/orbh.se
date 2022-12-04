@@ -1,11 +1,18 @@
-html,
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: medium;
-  height: 100%;
-  width: 100%;
   padding: 0;
   margin: 0;
+}
+
+html {
+  max-width: 100%;
 }
 
 a {
@@ -16,206 +23,38 @@ a:visited {
   color: gray;
 }
 
-h1,
-h2,
-h3 {
-  text-align: center;
-}
-
-p {
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-}
-
-.header-tab {
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
-  text-decoration: none;
+  height: 110vh;
+  width: 100vw;
+  max-width: 100%;
 }
 
-.header-tabs-anchor {
-  font-size: x-large;
-  color: white;
-  margin-left: 15px;
+/* Animation */
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }
 
-.grid-item {
-  margin: 5px;
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
 }
 
-.header-image-link {
-  height: 32px;
-  width: 32px;
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
-.header-link {
-  height: 32px;
-  width: 32px;
-}
-
-#container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-}
-
-#header {
-  flex: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 3%;
-  margin-right: 3%;
-  height: 75px;
-}
-
-#header-title {
-  font-size: xx-large;
-  text-decoration: none;
-  margin: 5px;
-}
-
-#header-title:visited {
-  color: black;
-}
-#header-tabs-container {
-  display: flex;
-}
-
-#main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: auto;
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#main-introduction {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  column-gap: 20px;
-}
-
-#main-introduction-title {
-  font-size: x-large;
-  margin-bottom: 0px;
-  text-align: start;
-}
-
-#main-introduction-textarea {
-  display: flex;
-  flex-direction: column;
-}
-
-#main-image {
-  border-radius: 50%;
-  border-style: dashed;
-  color: forestgreen;
-}
-
-#footer {
-  flex: none;
-  height: 20px;
-  line-height: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.separator {
-  width: 80%;
-  height: 5px;
-  background-color: black;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#introduction-title {
-  color: forestgreen;
-}
-
-#main-showcase {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 100%;
-}
-
-#showcase-title {
-  color: forestgreen;
-  margin: 0px;
-}
-
-#showcase-box {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.showcase-link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.showcase-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 399px;
-}
-
-.showcase-image {
-  height: 100%;
-  width: 100%;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  max-height: 178px;
-}
-
-.showcase-item-title {
-  margin-bottom: 5px;
-}
-
-.showcase-card-text {
-  margin: 5px;
-}
-
-#main-skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.skills-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.skill-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 40px;
-}
+/* Coloring */
 
 .primary-color {
   color: black;
@@ -225,10 +64,61 @@ p {
   color: forestgreen;
 }
 
-.skill-list-box {
+/* General classes */
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
   display: flex;
 }
 
-.list-heading {
-  margin-bottom: 0px;
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* Specific items */
+
+.avatar {
+  border-radius: 50%;
+  border: 3px;
+  border-style: dashed;
+  height: 150px;
+  width: 150px;
+}
+
+.showcase {
+  max-width: 50%;
+}
+
+.showcase-img {
+  height: 178px;
+  width: 399px;
+}
+
+.showcase-p {
+  word-wrap: normal;
+}
+
+.showcase-item {
+  max-width: 45%;
 }

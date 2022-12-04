@@ -8,114 +8,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <script src="scripts.js" defer></script>
     <script src="feather.min.js"></script>
   </head>
   <body>
-    <div id="container">
-      <div id="header">
-        <a id="header-title" class="hover-underline-animation" href="/">orbh.se</a>
-        <div id="header-tabs-container">
-          <a class="header-tab" target="_blank" href="https://github.com/orbh">
+    <div class="center container">
+      <section class="center hidden">
+        <div class="center flex wrap">
+          <div class="flex-column">
+            <h2 class="accent-color no-margin">Hello, my name Olle Goblirsch</h2>
+            <p class="no-margin">I'm a junior developer looking for the next big thing!</p>
+          </div>
+          <img
+            class="accent-color avatar"
+            src="./public/images/Batholt-150px.png"
+            alt="avatar of me"
+          />
+        </div>
+        <div class="center flex" style="column-gap: 10px">
+          <a
+            class="center flex-column no-decoration"
+            target="_blank"
+            href="https://github.com/orbh"
+          >
             <i data-feather="github"></i>
             <p>Github</p>
           </a>
-          <a class="header-tab" target="_blank" href="mailto:olle.goblirsch@gmail.com">
+          <a
+            class="center flex-column no-decoration"
+            target="_blank"
+            href="mailto:olle.goblirsch@gmail.com"
+          >
             <i data-feather="mail"></i>
             <p>Email</p>
           </a>
         </div>
-      </div>
-      <div id="main">
-        <div id="main-introduction">
-          <div id="main-introduction-textarea">
-            <h2 id="main-introduction-title" class="accent-color">Hello, my name Olle Goblirsch</h2>
-            <p>I'm a junior developer looking for the next big thing!</p>
-          </div>
-          <img
-            id="main-image"
-            class="accent-color"
-            src="./public/images/Batholt-150px.png"
-            height="150"
-            width="150"
-            alt="Avatar of me"
-          />
-        </div>
-        <div id="main-skills">
-          <div class="skills-header">
-            <h2 class="accent-color" style="margin-bottom: 0px">Skills</h2>
-            <p>By rough order of familiarity</p>
-          </div>
-          <div class="skill-box">
-            <div class="skills-column">
-              <h3 class="list-heading">Languages</h3>
-              <div class="skill-list-box">
-                <ol>
-                  <li>Javascript</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Typescript</li>
-                </ol>
-                <ol start="5">
-                  <li>Python</li>
-                  <li>SQL</li>
-                  <li>C#</li>
-                </ol>
-              </div>
+      </section>
+      <section class="center hidden">
+        <h2 class="accent-color no-margin">Skills</h2>
+        <p class="no-margin">By rough order of familiarity</p>
+        <div class="flex wrap" style="column-gap: 40px">
+          <div>
+            <h3 class="text-center">Languages</h3>
+            <div class="center flex wrap">
+              <ol>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Typescript</li>
+              </ol>
+              <ol start="5">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>C#</li>
+              </ol>
             </div>
-            <div class="skills-column">
-              <h3 class="list-heading">Frameworks & Other</h3>
-              <div class="skill-list-box">
-                <ol>
-                  <li>Git</li>
-                  <li>React</li>
-                  <li>Mantine</li>
-                </ol>
-                <ol start="4">
-                  <li>Pascal</li>
-                  <li>Papyrus</li>
-                </ol>
-              </div>
+          </div>
+          <div>
+            <h3 class="text-center">Frameworks & Other</h3>
+            <div class="center flex wrap">
+              <ol>
+                <li>Node.js</li>
+                <li>React</li>
+                <li>Git</li>
+              </ol>
+              <ol start="4">
+                <li>Mantine</li>
+                <li>Pascal</li>
+                <li>Papyrus</li>
+              </ol>
             </div>
           </div>
         </div>
-        <div class="separator"></div>
-        <div id="main-showcase">
-          <h2 id="showcase-title">Showcase</h2>
-          <div id="showcase-box">
-            <div class="showcase-item">
-              <h3 class="showcase-item-title">EonDiceRoller</h3>
-              <a class="showcase-link" href="https://github.com/orbh/EonDiceRoller" target="_blank">
-                https://github.com/orbh/EonDiceRoller
-              </a>
-              <img
-                class="showcase-image"
-                src="public/images/eon.jpg"
-                alt="screenshot of eon application"
-              />
-              <p class="showcase-text">
-                Open source utility tool for the tabletop RPG Eon. Built as a command-line
-                application written in Python as a hobby project. Can be used to pre-generate rolls
-                for the gamemaster, or for the players to help calculate their improvement rolls.
-              </p>
-            </div>
-            <div class="showcase-item">
-              <h3 class="showcase-item-title">orbh.se</h3>
-              <a class="showcase-link" href="https://github.com/orbh/orbh.se" target="_blank">
-                https://github.com/orbh/orbh.se
-              </a>
-              <img class="showcase-image" src="public/images/orbh.se.png" alt="website code" />
-              <p class="showcase-text">
-                Basic website built with pure HTML, CSS and a little bit of Javascript.
-              </p>
-            </div>
+      </section>
+      <section class="center hidden">
+        <h2 class="accent-color">Showcase</h2>
+        <div class="flex wrap" style="column-gap: 10%">
+          <div class="showcase">
+            <h3>EonDiceRoller</h3>
+            <a href="https://github.com/orbh/EonDiceRoller" target="_blank">
+              https://github.com/orbh/EonDiceRoller
+            </a>
+            <img
+              class="showcase-img"
+              src="public/images/eon.jpg"
+              alt="screenshot of eon application"
+            />
+            <p class="showcase-p">
+              Open source utility tool for the tabletop RPG Eon. Built as a command-line application
+              written in Python as a hobby project. Can be used to pre-generate rolls for the
+              gamemaster, or for the players to help calculate their improvement rolls.
+            </p>
+          </div>
+          <div class="showcase">
+            <h3>orbh.se</h3>
+            <a href="https://github.com/orbh/orbh.se" target="_blank">
+              https://github.com/orbh/orbh.se
+            </a>
+            <img class="showcase-img" src="public/images/orbh.se.png" alt="website code" />
+            <p class="showcase-p">
+              Basic website built with pure HTML, CSS and a little bit of Javascript.
+            </p>
           </div>
         </div>
-      </div>
-      <div id="footer">
-        <p>© 2022, Olle Goblirsch</p>
-      </div>
+      </section>
     </div>
-    <script src="scripts.js" async defer></script>
     <script>
       feather.replace();
     </script>
