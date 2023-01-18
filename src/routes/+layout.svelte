@@ -3,7 +3,7 @@
 </script>
 
 <div class="bg-slate-200 min min-h-screen min-w-full flex flex-col ">
-	<header class="flex flex-row gap-5 px-8 py-4 bg-slate-400">
+	<header class="flex flex-row gap-5 px-6 py-3 bg-slate-400">
 		<div class="flex-grow">
 			<a href="/" class="text-3xl font-bold whitespace-nowrap"> Olle Goblirsch </a>
 		</div>
@@ -20,7 +20,7 @@
 		</nav>
 	</header>
 
-	<main class="flex flex-grow flex-col justify-center items-center">
+	<main class="flex flex-grow flex-col justify-center items-center px-4">
 		<slot />
 	</main>
 
