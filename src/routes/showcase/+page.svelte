@@ -9,8 +9,7 @@
 		{
 			name: 'EonDiceRoller',
 			link: 'https://github.com/orbh/EonDiceRoller',
-			description:
-				'Basic portfolio website. Made primarily with SvelteKit, TypeScript and Tailwind CSS, ESLint and Prettier.',
+			description: `CLI written in Python and designed to be used with the swedish TTRPG Eon. It's current functions are generating a .CSV-file with generated rolls and automatically calculating improvement rolls.`,
 			keywords: ['Python', 'Command-line App', '.CSV'],
 			image: { link: eon, altText: 'Eon CLI view' }
 		},
@@ -18,7 +17,7 @@
 			name: 'orbh.se',
 			link: 'https://github.com/orbh/orbh.se',
 			description:
-				'Basic portfolio website. Made primarily with SvelteKit, TypeScript and Tailwind CSS, ESLint and Prettier.',
+				'Basic portfolio website. Made primarily with tools such as SvelteKit, TypeScript and Tailwind CSS.',
 			keywords: ['SvelteKit', 'TypeScript', 'Tailwind CSS'],
 			image: { link: orbh, altText: 'Source code for website' }
 		}
