@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { expoInOut } from 'svelte/easing';
+	import { slide } from 'svelte/transition';
+
 	let items = [
 		{ name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
 		{ name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
@@ -17,7 +20,7 @@
 	];
 </script>
 
-<section class="flex flex-col gap-1">
+<section transition:slide={{ easing: expoInOut }} class="flex flex-col gap-1">
 	<h2 class="font-bold text-4xl">About me</h2>
 	<p class="text-lg">
 		I'm a creative junior developer who's trying to make the web more usable, accessible and fun.
