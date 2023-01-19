@@ -7,48 +7,45 @@
 
 	let projects = [
 		{
+			name: 'orbh.se',
+			link: 'https://github.com/orbh/orbh.se',
+			description:
+				'Basic static portfolio website. Made primarily with tools such as SvelteKit, TypeScript and Tailwind CSS.',
+			keywords: ['SvelteKit', 'TypeScript', 'Tailwind CSS'],
+			image: { link: orbh, altText: 'Source code for website' }
+		},
+		{
 			name: 'EonDiceRoller',
 			link: 'https://github.com/orbh/EonDiceRoller',
 			description: `CLI written in Python and designed to be used with the swedish TTRPG Eon. It's current functions are generating a .CSV-file with generated rolls and automatically calculating improvement rolls.`,
 			keywords: ['Python', 'Command-line App', '.CSV'],
 			image: { link: eon, altText: 'Eon CLI view' }
-		},
-		{
-			name: 'orbh.se',
-			link: 'https://github.com/orbh/orbh.se',
-			description:
-				'Basic portfolio website. Made primarily with tools such as SvelteKit, TypeScript and Tailwind CSS.',
-			keywords: ['SvelteKit', 'TypeScript', 'Tailwind CSS'],
-			image: { link: orbh, altText: 'Source code for website' }
 		}
 	];
 </script>
 
-<section
-	transition:slide={{ easing: expoInOut }}
-	class="flex gap-4 items-center justify-center flex-wrap"
->
+<section transition:slide={{ easing: expoInOut }} class="flex justify-center gap-5 flex-wrap">
 	{#each projects as project}
-		<div
-			class="flex flex-col justify-center items-center border-8 border-slate-800 rounded-lg gap-1 max-w-md"
-		>
+		<div class="flex flex-col max-w-md border-8 border-slate-800 rounded-lg bg-white">
 			<a title="Visit on Github" target="_blank" rel="noreferrer" href={project.link}>
 				<img alt={project.image.altText} src={project.image.link} />
 			</a>
-			<div class="flex flex-col gap-1 px-4">
-				<a title="Visit on Github" target="_blank" rel="noreferrer" href={project.link}>
-					<h3 class="font-bold text-2xl">{project.name}</h3>
-				</a>
-				<p>{project.description}</p>
-				<ul class="flex gap-4 py-2">
-					{#each project.keywords as keywords}
-						<li
-							class="bg-slate-400 rounded-full px-2 border-slate-800 border-2 hover:-translate-y-1"
-						>
-							{keywords}
-						</li>
-					{/each}
-				</ul>
+			<div class="flex flex-col flex-1 px-4">
+				<div class="flex flex-col flex-grow">
+					<a title="Visit on Github" target="_blank" rel="noreferrer" href={project.link}>
+						<h3 class="font-bold text-2xl">{project.name}</h3>
+					</a>
+					<p>{project.description}</p>
+				</div>
+				<div>
+					<ul class="flex gap-2 py-2">
+						{#each project.keywords as keywords}
+							<li class="bg-slate-200 rounded-full px-2 py-1 hover:-translate-y-1">
+								{keywords}
+							</li>
+						{/each}
+					</ul>
+				</div>
 			</div>
 		</div>
 	{/each}

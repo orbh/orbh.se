@@ -22,25 +22,29 @@
 
 <section
 	transition:slide={{ easing: expoInOut }}
-	class="flex flex-col gap-1 border-8 border-slate-800 p-8 rounded-lg md:max-w-3xl"
+	class="flex flex-col gap-3 border-8 border-slate-800 p-8 rounded-lg md:max-w-3xl bg-white"
 >
-	<h2 class="font-bold text-2xl">About me</h2>
-	<p class="text-lg">
-		I'm a creative junior developer who's trying to make the web more usable, accessible and fun.
-		Currently looking for my first big leap into IT. I've studied the Information Systems programme
-		at Örebro University.
-	</p>
-	<h2 class="font-bold text-2xl">Some things I'm familiar with</h2>
-	<ul class="flex gap-4 flex-wrap pt-2 leading-10">
-		{#each items as item}
-			<li class="hover:-translate-y-1">
-				<a
-					class="bg-slate-400 rounded-full p-2 whitespace-nowrap text-lg border-slate-800 border-4"
-					target="_blank"
-					rel="noreferrer"
-					href={item.link}>{item.name}</a
-				>
-			</li>
-		{/each}
-	</ul>
+	<div>
+		<h2 class="font-bold text-3xl text-slate-800">About me</h2>
+		<p class="text-lg">
+			I'm a creative junior developer who's trying to make the web more usable, accessible and fun.
+			Currently looking for my first big leap into IT. I've studied the Information Systems
+			programme at Örebro University.
+		</p>
+	</div>
+	<div>
+		<h2 class="font-bold text-3xl text-slate-800">Some things I'm familiar with</h2>
+		<ul class="flex gap-4 flex-wrap pt-2 leading-10">
+			{#each items as item}
+				<li class="hover:-translate-y-1">
+					<a
+						class="bg-slate-900 text-white text-lg rounded-full py-2 px-4 whitespace-nowrap hover:text-sky-500"
+						target="_blank"
+						rel="noreferrer"
+						href={item.link}>{item.name}</a
+					>
+				</li>
+			{/each}
+		</ul>
+	</div>
 </section>

@@ -2,29 +2,31 @@
 	import '../app.css';
 </script>
 
-<div class="bg-slate-200 min min-h-screen min-w-full flex flex-col ">
-	<header class="flex flex-row gap-5 px-6 py-3 bg-slate-400">
+<div class="bg-slate-100 min min-h-screen min-w-full flex flex-col antialiased text-slate-700">
+	<header class="flex flex-row gap-5 px-6 py-3 bg-white border-b border-slate-900/10">
 		<div class="flex-grow">
-			<a href="/" class="text-3xl font-bold whitespace-nowrap"> Olle Goblirsch </a>
+			<a href="/" class="text-3xl font-bold whitespace-nowrap hover:text-sky-500">
+				Olle Goblirsch
+			</a>
 		</div>
 		<nav class="flex items-center gap-4">
 			<span>
-				<a href="/" class="text-2xl font-bold hover:underline"> Home </a>
+				<a href="/" class="text-xl font-bold hover:text-sky-500"> Home </a>
 			</span>
 			<span>
-				<a href="/about" class="text-2xl font-bold whitespace-nowrap hover:underline"> About </a>
+				<a href="/about" class="text-xl font-bold hover:text-sky-500"> About </a>
 			</span>
 			<span>
-				<a href="/showcase" class="text-2xl font-bold hover:underline"> Showcase </a>
+				<a href="/showcase" class="text-xl font-bold hover:text-sky-500"> Showcase </a>
 			</span>
 		</nav>
 	</header>
 
-	<main class="flex flex-grow flex-col justify-center items-center px-4">
+	<main class="flex flex-grow flex-col justify-center items-center p-4">
 		<slot />
 	</main>
 
-	<footer class="flex items-center justify-between px-4 py-2 bg-slate-400">
+	<footer class="flex items-center justify-between px-4 py-2 bg-white border-t border-slate-900/10">
 		<div>© Olle Goblirsch. All rights reserved.</div>
 		<div class="flex gap-5">
 			<a
@@ -35,7 +37,7 @@
 				title="My github page"
 			>
 				<svg
-					class="fill-black hover:scale-125"
+					class="fill-black hover:scale-125 hover:fill-sky-500"
 					viewBox="0 0 98 96"
 					xmlns="http://www.w3.org/2000/svg"
 				>
@@ -54,7 +56,7 @@
 				title="Send me an Email!"
 			>
 				<svg
-					class="fill-black hover:scale-125"
+					class="fill-black hover:scale-125 hover:fill-sky-500"
 					aria-hidden="true"
 					viewBox="0 0 24 24"
 					fill="none"
