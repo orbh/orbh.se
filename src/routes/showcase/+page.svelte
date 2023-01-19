@@ -24,6 +24,14 @@
 	];
 </script>
 
+<svelte:head>
+	<title>orbh - Showcase</title>
+	<meta
+		name="description"
+		content="orbh.se: Basic static portfolio website. EonDiceRoller: CLI written in Python and designed to be used with the swedish TTRPG Eon."
+	/>
+</svelte:head>
+
 <section transition:slide={{ easing: expoInOut }} class="flex justify-center gap-5 flex-wrap">
 	{#each projects as project}
 		<div class="flex flex-col max-w-md border-8 border-slate-800 rounded-lg bg-white">
@@ -33,14 +41,16 @@
 			<div class="flex flex-col flex-1 px-4">
 				<div class="flex flex-col flex-grow">
 					<a title="Visit on Github" target="_blank" rel="noreferrer" href={project.link}>
-						<h3 class="font-bold text-2xl">{project.name}</h3>
+						<h3 class="font-bold text-2xl hover:text-sky-500">{project.name}</h3>
 					</a>
 					<p>{project.description}</p>
 				</div>
 				<div>
 					<ul class="flex gap-2 py-2">
 						{#each project.keywords as keywords}
-							<li class="bg-slate-200 rounded-full px-2 py-1 hover:-translate-y-1">
+							<li
+								class="bg-slate-200 rounded-full px-2 py-1 hover:-translate-y-1 hover:text-sky-500"
+							>
 								{keywords}
 							</li>
 						{/each}

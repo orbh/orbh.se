@@ -3,6 +3,11 @@
 	import { slide } from 'svelte/transition';
 </script>
 
+<svelte:head>
+	<title>orbh</title>
+	<meta name="description" content="Portfolio website for Olle Goblirsch" />
+</svelte:head>
+
 <section
 	transition:slide={{ easing: expoInOut }}
 	class="border-8 border-slate-800 p-8 rounded-lg bg-white"

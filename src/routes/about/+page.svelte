@@ -20,6 +20,14 @@
 	];
 </script>
 
+<svelte:head>
+	<title>orbh - About</title>
+	<meta
+		name="description"
+		content="I'm a creative junior developer who's trying to make the web more usable, accessible and fun. Currently looking for my first big leap into IT. I've studied the Information Systems programme at Örebro University."
+	/>
+</svelte:head>
+
 <section
 	transition:slide={{ easing: expoInOut }}
 	class="flex flex-col gap-3 border-8 border-slate-800 p-8 rounded-lg md:max-w-3xl bg-white"
