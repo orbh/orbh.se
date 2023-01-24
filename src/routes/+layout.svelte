@@ -27,7 +27,7 @@
 	</main>
 
 	<footer class="flex items-center justify-between px-4 py-2 bg-white border-t border-slate-900/10">
-		<div>© Olle Goblirsch. All rights reserved.</div>
+		<div class="text-sm">© Olle Goblirsch. All rights reserved.</div>
 		<div class="flex gap-5">
 			<a
 				class="flex justify-center items-center w-8 h-8"
@@ -37,7 +37,7 @@
 				title="My github page"
 			>
 				<svg
-					class="fill-black hover:scale-125 hover:fill-sky-500"
+					class="fill-slate-900 hover:scale-125 hover:fill-sky-500"
 					viewBox="0 0 98 96"
 					xmlns="http://www.w3.org/2000/svg"
 				>
@@ -56,7 +56,7 @@
 				title="Send me an Email!"
 			>
 				<svg
-					class="fill-black hover:scale-125 hover:fill-sky-500"
+					class="fill-slate-900 hover:scale-125 hover:fill-sky-500"
 					aria-hidden="true"
 					viewBox="0 0 24 24"
 					fill="none"

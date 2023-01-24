@@ -43,7 +43,7 @@
 					<a title="Visit on Github" target="_blank" rel="noreferrer" href={project.link}>
 						<h3 class="font-bold text-2xl hover:text-sky-500">{project.name}</h3>
 					</a>
-					<p>{project.description}</p>
+					<p class="font-serif">{project.description}</p>
 				</div>
 				<div>
 					<ul class="flex gap-2 py-2">
