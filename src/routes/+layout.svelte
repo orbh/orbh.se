@@ -1,5 +1,20 @@
 <script lang="ts">
 	import '../app.css';
+
+	let navbar = [
+		{
+			name: 'Home',
+			link: '/'
+		},
+		{
+			name: 'About',
+			link: '/about'
+		},
+		{
+			name: 'Showcase',
+			link: '/showcase'
+		}
+	];
 </script>
 
 <div class="bg-slate-100 min min-h-screen min-w-full flex flex-col antialiased text-slate-700">
@@ -12,15 +27,9 @@
 			</a>
 		</div>
 		<nav class="flex items-center gap-4">
-			<span>
-				<a href="/" class="text-lg sm:text-xl font-bold hover:text-sky-500"> Home </a>
-			</span>
-			<span>
-				<a href="/about" class="text-lg sm:text-xl font-bold hover:text-sky-500"> About </a>
-			</span>
-			<span>
-				<a href="/showcase" class="text-lg sm:text-xl font-bold hover:text-sky-500"> Showcase </a>
-			</span>
+			{#each navbar as item}
+				<a href={item.link} class="text-lg sm:text-xl font-bold hover:text-sky-500">{item.name}</a>
+			{/each}
 		</nav>
 	</header>
 
