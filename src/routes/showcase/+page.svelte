@@ -43,13 +43,13 @@
 					<a title="Visit on Github" target="_blank" rel="noreferrer" href={project.link}>
 						<h3 class="font-bold text-2xl hover:text-sky-500">{project.name}</h3>
 					</a>
-					<p class="font-serif">{project.description}</p>
+					<p>{project.description}</p>
 				</div>
 				<div>
 					<ul class="flex gap-2 py-2">
 						{#each project.keywords as keywords}
 							<li
-								class="bg-slate-200 rounded-full px-2 py-1 hover:-translate-y-1 hover:text-sky-500"
+								class="bg-slate-200 rounded-full text-xs sm:text-base px-2 py-1 hover:-translate-y-1 hover:text-sky-500"
 							>
 								{keywords}
 							</li>

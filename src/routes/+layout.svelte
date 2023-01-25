@@ -3,21 +3,23 @@
 </script>
 
 <div class="bg-slate-100 min min-h-screen min-w-full flex flex-col antialiased text-slate-700">
-	<header class="flex flex-row gap-5 px-6 py-3 bg-white border-b border-slate-900/10">
-		<div class="flex-grow">
-			<a href="/" class="text-3xl font-bold whitespace-nowrap hover:text-sky-500">
+	<header
+		class="flex flex-row gap-5 px-4 py-2 sm:px-6 sm:py-3 bg-white border-b border-slate-900/10"
+	>
+		<div class="flex-grow hidden sm:inline">
+			<a href="/" class="text-xl sm:text-3xl font-bold whitespace-nowrap hover:text-sky-500">
 				Olle Goblirsch
 			</a>
 		</div>
 		<nav class="flex items-center gap-4">
 			<span>
-				<a href="/" class="text-xl font-bold hover:text-sky-500"> Home </a>
+				<a href="/" class="text-lg sm:text-xl font-bold hover:text-sky-500"> Home </a>
 			</span>
 			<span>
-				<a href="/about" class="text-xl font-bold hover:text-sky-500"> About </a>
+				<a href="/about" class="text-lg sm:text-xl font-bold hover:text-sky-500"> About </a>
 			</span>
 			<span>
-				<a href="/showcase" class="text-xl font-bold hover:text-sky-500"> Showcase </a>
+				<a href="/showcase" class="text-lg sm:text-xl font-bold hover:text-sky-500"> Showcase </a>
 			</span>
 		</nav>
 	</header>
@@ -27,7 +29,7 @@
 	</main>
 
 	<footer class="flex items-center justify-between px-4 py-2 bg-white border-t border-slate-900/10">
-		<div class="text-sm">© Olle Goblirsch. All rights reserved.</div>
+		<div class="text-xs sm:text-sm">© Olle Goblirsch. All rights reserved.</div>
 		<div class="flex gap-5">
 			<a
 				class="flex justify-center items-center w-8 h-8"

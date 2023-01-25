@@ -10,7 +10,7 @@
 
 <section
 	transition:slide={{ easing: expoInOut }}
-	class="border-8 border-slate-800 p-8 rounded-lg bg-white"
+	class="border-8 border-slate-800 p-4 sm:p-8 rounded-lg bg-white"
 >
 	<p class="text-4xl font-extrabold text-slate-800">
 		Hello! My name is
